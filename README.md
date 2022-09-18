@@ -8,7 +8,7 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=guilhermegimenez&label=Profile%20views&color=0e75b6&style=flat" alt="guilhermegimenez" /> </p>
 <h3 align="left">Description:</h3>
 <p align="left"> The idea of the product is provider to players a nice experience to find a duo to play. Some features are share to others players the better day of the week to play and discord id to connect. </p> 
-- This project is based in challange from Rockseat the NLW eSports
+- This project is based on challange from Rockseat the NLW eSports
 - NLW is a very cool program where we can improve our tech and soft skills
 - It have 3 projects: mobile, web and the api backend
 <br><br>
