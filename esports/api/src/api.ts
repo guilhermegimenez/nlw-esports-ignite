@@ -28,7 +28,13 @@ app.post('/games/:id/ads', async (req, res) => {
     ad.weekDays = ad.weekDays.join();
     ad.hourStart = convertHoursStringtoMinutes(ad.hourStart);
     ad.hourEnd = convertHoursStringtoMinutes(ad.hourEnd);
-    return res.status(201).json(await gameService.createAd(gameId, ad));
+
+    try {
+        return res.status(201).json(await gameService.createAd(gameId, ad));
+    } catch (error) {
+        return res.status(400).send("Invalid Game");
+    }
+
 })
 
 app.get('/games/:id/ads', async (req, res) => {
