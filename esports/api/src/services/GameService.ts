@@ -35,7 +35,29 @@ class GameService {
                 }
             }
         })
-        return games;
+
+        if (games.length > 0) {
+            return games;
+        } else {
+            await prisma.game.createMany({
+                data: [
+                    { title: 'CS:GO', bannerUrl: 'https://static-cdn.jtvnw.net/ttv-boxart/32399_IGDB-285x380.jpg' },
+                    { title: 'WOW', bannerUrl: 'https://static-cdn.jtvnw.net/ttv-boxart/18122-285x380.jpg' },
+                    { title: 'VALORANT', bannerUrl: 'https://static-cdn.jtvnw.net/ttv-boxart/516575-285x380.jpg' },
+                    { title: 'Dota 2', bannerUrl: 'https://static-cdn.jtvnw.net/ttv-boxart/29595-285x380.jpg' },
+                    { title: 'Warzone', bannerUrl: 'https://static-cdn.jtvnw.net/ttv-boxart/512710-285x380.jpg' },
+                    { title: 'Tibia', bannerUrl: 'https://static-cdn.jtvnw.net/ttv-boxart/19619_IGDB-144x192.jpg' }
+                ]
+            })
+            return await prisma.game.findMany({
+                include: {
+                    _count: {
+                        select: { ads: true }
+                    }
+                }
+            })
+        }
+
     }
 
     async createAd(gameId: string, ad: Ad) {

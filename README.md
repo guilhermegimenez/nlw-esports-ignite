@@ -52,14 +52,14 @@ From root folder of api project
 
 run the next commands & steps
 
-#### first . install dependencies
+### first . install dependencies
 
 ```bash
 # Install all dependencies from package.json
 $ npm i
 ```
 
-#### second . config database
+### second . config database
 
 The project api was developed to run with [PostgreSQL](https://www.postgresql.org) database.
 
@@ -81,7 +81,7 @@ $ npx prisma migrate dev
 ```
 To connect into others databases search in [prisma](https://www.prisma.io/docs/concepts/database-connectors) about supported databases.
 
-#### finnaly . run api
+### finally . run api
 ```bash
 # Running api
 $ npm run dev
