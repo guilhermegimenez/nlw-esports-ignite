@@ -22,7 +22,8 @@
 
 ## Getting Started
 
-To clone and run this applications, you'll need [docker](https://www.docker.com/get-started/), [git](https://git-scm.com),  [node](https://nodejs.org/en/) & [npm](https://www.npmjs.com/). 
+To clone and run this applications, you will need [docker](https://www.docker.com/get-started/), [git](https://git-scm.com),  [node](https://nodejs.org/en/) & [npm](https://www.npmjs.com/). 
+To see the result of mobile application, you will need expo in your mobile see more about [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US) or [iOS](https://apps.apple.com/br/app/expo-go/id982107779)
 <br/>Node version used in this project: `16.14.0`
 
 ## Repository
@@ -89,7 +90,47 @@ $ npm run dev
 
 ## Running project web
 
+From root folder of web project 
+
+📦esports
+
+ ┣ 📂**web**
+
+run the next commands
+
+```bash
+# Install all dependencies from package.json
+$ npm i
+
+# Run app web
+$ npm run dev
+
+# Running in http://127.0.0.1:5173
+```
+
 ## Running project mobile
+- [Expo for Android](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=pt_BR&gl=US)
+- [Expo for iOS](https://apps.apple.com/br/app/expo-go/id982107779)
+
+From root folder of mobile project 
+
+📦esports
+
+ ┣ 📂**mobile**
+
+run the next commands
+
+```bash
+# Install all dependencies from package.json
+$ npm i
+
+# Run mobile app using expo
+$ expo start
+
+# Scann the QR Code generated and enjoy
+```
+
+
 
 - 🌱 I’m currently learning **React and React Native**
 
