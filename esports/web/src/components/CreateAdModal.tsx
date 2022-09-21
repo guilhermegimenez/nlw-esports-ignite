@@ -1,4 +1,4 @@
-import { ArrowClockwise, CaretDown, CaretUp, Check, GameController } from 'phosphor-react';
+import { CaretDown, CaretUp, Check, GameController } from 'phosphor-react';
 import { Input } from './Form/input';
 import { useEffect, useState, FormEvent } from 'react';
 
