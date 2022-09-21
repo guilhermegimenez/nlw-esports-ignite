@@ -30,8 +30,11 @@ To clone and run this applications, you'll need [docker](https://www.docker.com/
 From this repository you clone 3 projects inside the folder esports: api, mobile & web
 
 📦esports
+
  ┣ 📂api
+
  ┣ 📂mobile
+ 
  ┣ 📂web
 
 ```bash
@@ -44,6 +47,7 @@ $ git clone https://github.com/guilhermegimenez/nlw-esports-ignite.git
 From root folder of api project 
 
 📦esports
+
  ┣ 📂**api**
 
 run the next commands & steps
